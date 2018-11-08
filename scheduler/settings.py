@@ -20,7 +20,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('DJANGO_SECRET')
+#SECRET_KEY = os.environ.get('8lu*6g0lg)9z!ba+a$ehk)xt)x%rxgb$i1&amp;022shmi1jcgihb*')
+# Make this unique, and don't share it with anybody.
+SECRET_KEY = '8lu*6g0lg)9z!ba+a$ehk)xt)x%rxgb$i1&amp;022shmi1jcgihb*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -78,17 +80,16 @@ WSGI_APPLICATION = 'scheduler.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'task_scheduler_1',
-#         'USER': config.get_db_user(),
-#         'PASSWORD': config.get_db_password(),
-#         'HOST': 'localhost',
-#         'PORT': '5432',
-#     }
-# }
-
+DATABASES = {
+     'default': {
+         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+         'NAME': 'postgres',
+         'USER': 'postgres  ',
+         'PASSWORD': '1234qwer',
+         'HOST': 'localhost',
+         'PORT': '5432',
+     }
+ }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
